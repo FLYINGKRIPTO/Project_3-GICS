@@ -25,7 +25,7 @@
     <string name="activity">Activity</string>
 
     <string name="q3_java">Q3. You can shutdown an activity by calling _______________ method.</string>
-    
+
     <string name="finishactivity">finishActivity</string>
     <string name="finish">finish</string>
     <string name="none_of_the_above">None of the above</string>
