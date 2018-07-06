@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape>
+        <stroke android:width="6dp" android:color="#be000000" />
+
+        <solid android:color="@android:color/transparent" />
+
+        <corners
+            android:bottomLeftRadius="@dimen/cornerRadius"
+            android:bottomRightRadius="@dimen/cornerRadius"
+            android:topLeftRadius="@dimen/cornerRadius"
+            android:topRightRadius="@dimen/cornerRadius" />
+    </shape></item>
+
+
+
+</selector>

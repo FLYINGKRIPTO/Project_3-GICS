@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbb"
+    tools:context="com.example.dell.androquiz.MainActivityPackage.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="@dimen/StartButtonWidth"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/StartButtonMarginTop"
+            android:background="@drawable/group1shadow"
+            android:fontFamily="@font/jokerman"
+            android:onClick="onStart"
+            android:paddingBottom="10dp"
+            android:paddingStart="@dimen/paddingHorizontal"
+            android:paddingEnd="@dimen/paddingHorizontal"
+            android:paddingTop="@dimen/StartButtonPaddingTop"
+            android:text="@string/start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/andro_quiz"
+            android:layout_width="@dimen/HeadingButtonWidth"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/HeadingMarginTop"
+            android:background="@drawable/group2"
+            android:fontFamily="@font/jokerman"
+            android:paddingStart="@dimen/HeadingPadding"
+            android:paddingEnd="@dimen/HeadingPaddingTop"
+            android:paddingTop="@dimen/HeadingPaddingTop"
+            android:text="@string/andro_quiz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSizeMedium"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="@dimen/imageWidth"
+        android:layout_height="@dimen/imageHeight"
+        android:layout_centerInParent="true"
+        android:background="@drawable/android2"
+        android:contentDescription="@string/android_image" />
+
+
+</RelativeLayout>
