@@ -176,7 +176,7 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_marginStart="@dimen/HeadingPaddingTop"
-                android:text="Q3. Which of the following attributes are used in XML"
+                android:text="@string/ques"
                 />
 
                 <CheckBox
