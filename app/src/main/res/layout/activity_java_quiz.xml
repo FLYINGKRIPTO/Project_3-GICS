@@ -270,7 +270,7 @@
               android:textStyle="bold"
               android:textColor="@color/white"
               android:layout_marginStart="@dimen/HeadingPaddingTop"
-              android:text="Which of the following is used for eception handling in java?"
+              android:text="@string/exhndl"
               />
 
               <CheckBox
@@ -280,7 +280,7 @@
                   android:layout_marginStart="@dimen/HeadingPaddingTop"
                   android:textColor="@color/white"
                   android:layout_marginTop="70dp"
-                  android:text="try  "
+                  android:text="@string/trytrt"
                   android:paddingStart="@dimen/fab_margin"
                   />
               <CheckBox
@@ -290,7 +290,7 @@
                   android:layout_marginStart="@dimen/HeadingPaddingTop"
                   android:layout_marginTop="95dp"
                   android:textColor="@color/white"
-                  android:text="catch"
+                  android:text="@string/catchtrt"
                   android:paddingStart="@dimen/fab_margin"
                   />
               <CheckBox
@@ -299,7 +299,7 @@
                   android:layout_marginStart="@dimen/HeadingPaddingTop"
                   android:layout_marginTop="120dp"
                   android:textColor="@color/white"
-                  android:text="finalize()"
+                  android:text="@string/finalize"
                   android:paddingStart="@dimen/fab_margin"
                   />
               <CheckBox
@@ -307,7 +307,7 @@
                   android:layout_height="wrap_content"
                   android:layout_marginStart="@dimen/HeadingPaddingTop"
                   android:layout_marginTop="145dp"
-                  android:text="onDestroy()"
+                  android:text="@string/ondestroy"
                   android:textColor="@color/white"
                   android:paddingStart="@dimen/fab_margin"
                   />

@@ -247,7 +247,7 @@
                 android:layout_marginStart="@dimen/HeadingPaddingTop"
                 android:layout_marginTop="70dp"
                 android:paddingStart="@dimen/fab_margin"
-                android:text="Activity"
+                android:text="@string/activityhg"
                 android:textColor="@color/white" />
                 <CheckBox
                     android:textColor="@color/white"
@@ -256,7 +256,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="95dp"
-                    android:text="Services"
+                    android:text="@string/services"
                     android:paddingStart="@dimen/fab_margin"
                     />
                 <CheckBox
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="120dp"
-                    android:text="Swing"
+                    android:text="@string/swing"
                     android:paddingStart="@dimen/fab_margin"
                     />
                 <CheckBox
@@ -274,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="145dp"
-                    android:text="awt"
+                    android:text="@string/awt"
                     android:paddingStart="@dimen/fab_margin"
                     />
 
@@ -312,7 +312,7 @@
                  android:textStyle="bold"
                  android:textColor="@color/white"
                  android:layout_marginStart="80dp"
-                 android:text="is the basic building block of user interface in android "
+                 android:text="@string/ui"
                   />
 
         </android.support.v7.widget.CardView>

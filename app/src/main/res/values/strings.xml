@@ -9,7 +9,7 @@
     <string name="choose">CHOOSE</string>
     <string name="java">Java</string>
     <string name="layout">Layout</string>
-    <string name="xml">XML</string>
+
     <string name="start">START</string>
     <string name="android_image">Android Image</string>
     <string name="android">Android</string>
@@ -23,9 +23,9 @@
     <string name="viewgroup">ViewGroup</string>
     <string name="view">View</string>
     <string name="activity">Activity</string>
-    <string name="none_of_these">None of these</string>
+
     <string name="q3_java">Q3. You can shutdown an activity by calling _______________ method.</string>
-    <string name="ondestroy">onDestroy()</string>
+    
     <string name="finishactivity">finishActivity</string>
     <string name="finish">finish</string>
     <string name="none_of_the_above">None of the above</string>
@@ -106,4 +106,21 @@
     <string name="layout_marginstart">layout_marginStart</string>
     <string name="layout_width">layout_width</string>
     <string name="q1_select_a_mandatory_attribute_for_any_view_inside_of_a_container_layout">Q1. Select a mandatory attribute for any view inside of a container layout</string>
+    <string name="exhndl">Which of the following is used for exception handling in java?</string>
+    <string name="catchtrt">catch</string>
+    <string name="trytrt">try</string>
+    <string name="finalize">finalize()</string>
+    <string name="ondestroy">onDestroy()</string>
+    <string name="ui">is the basic building block of user interface in android</string>
+    <string name="activityhg">Activity</string>
+    <string name="services">Services</string>
+    <string name="swing">Swing</string>
+    <string name="awt">awt</string>
+    <string name="atr">________ attribute is used to specify how to place the content of an object, both on x-axis and y-axis within object itself</string>
+    <string name="xml">XML</string>
+    <string name="q4re">Q.4 Which language is case sensitive?</string>
+    <string name="none_of_these">None of these</string>
+    <string name="swinger">Swinger</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="checkbox">Checkbox</string>
 </resources>

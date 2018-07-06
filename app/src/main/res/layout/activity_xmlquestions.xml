@@ -186,7 +186,7 @@
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:textColor="@color/white"
                     android:layout_marginTop="@dimen/seventy"
-                    android:text="Checkbox"
+                    android:text="@string/checkbox"
                     android:paddingStart="@dimen/fab_margin"
                     />
                 <CheckBox
@@ -195,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="95dp"
-                    android:text="RadioButton"
+                    android:text="@string/radiobutton"
                     android:textColor="@color/white"
                     android:paddingStart="@dimen/fab_margin"
                     />
@@ -204,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="120dp"
-                    android:text="Swinger"
+                    android:text="@string/swinger"
                     android:textColor="@color/white"
                     android:paddingStart="@dimen/fab_margin"
                     />
@@ -215,7 +215,7 @@
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="145dp"
                     android:textColor="@color/white"
-                    android:text="None of these"
+                    android:text="@string/none_of_these"
                     android:paddingLeft="@dimen/fab_margin"
                     />
         </android.support.v7.widget.CardView>
@@ -241,7 +241,7 @@
                 android:textSize="@dimen/TextSizesmall"
                 android:textStyle="bold"
                 android:layout_marginStart="@dimen/HeadingPaddingTop"
-                android:text="Q.4 Which language is case sensitive? "
+                android:text="@string/q4re"
                 />
             <RadioGroup
                 android:layout_width="match_parent"
@@ -262,7 +262,7 @@
                     android:layout_marginStart="@dimen/HeadingPaddingTop"
                     android:layout_marginTop="-5dp"
                     android:textColor="@color/white"
-                    android:text="XML"
+                    android:text="@string/xml"
                     android:paddingLeft="@dimen/fab_margin"
                     />
                 <RadioButton
@@ -318,7 +318,7 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_marginStart="@dimen/HeadingPaddingTop"
-                android:text="________ attribute is used to specify how to place the content of an object, both on x-axis and y-axis within object itself  "
+                android:text="@string/atr"
                 />
 
         </android.support.v7.widget.CardView>
