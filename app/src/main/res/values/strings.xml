@@ -125,4 +125,5 @@
     <string name="ques">Q3. Which of the following attributes are used in XML</string>
     <string name="totalScore">TOTAL SCORE</string>
     <string name="yourSocre">Your Score is</string>
+    <string name="gr">gravity</string>
 </resources>

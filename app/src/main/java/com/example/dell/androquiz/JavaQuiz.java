@@ -8,27 +8,27 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-public class javaQuiz extends AppCompatActivity {
-    EditText eText;
+public class JavaQuiz extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_quiz);
     }
     public void onSubmit(View view) {
-        RadioButton q1_option2 = findViewById(R.id.q1o2);
-        boolean c_q1_option2 = q1_option2.isChecked();
-        RadioButton q2_option4 = findViewById(R.id.q204);
-        boolean c_q2_option4 = q2_option4.isChecked();
-        eText = (EditText) findViewById(R.id.q302);
+        RadioButton questionOneOptionTwo = findViewById(R.id.q1o2);
+        boolean queOneOptionTwo = questionOneOptionTwo.isChecked();
+        RadioButton questionTwoOptionFour = findViewById(R.id.q204);
+        boolean queTwoOptionFour = questionTwoOptionFour.isChecked();
+        EditText eText = (EditText) findViewById(R.id.q302);
         String str = eText.getText().toString();
-        RadioButton q4_option3 = findViewById(R.id.q403);
-        boolean c_q4_option3 = q4_option3.isChecked();
-        CheckBox q5_option2 = findViewById(R.id.q502);
-        boolean c_q5_option2 = q5_option2.isChecked();
-        CheckBox q5_option1 = findViewById(R.id.q501);
-        boolean c_q5_option1 = q5_option1.isChecked();
-        int totalScore = scoreCounter(c_q1_option2, c_q2_option4, str, c_q4_option3, c_q5_option2,c_q5_option1);
+        RadioButton questionFourOptionThree = findViewById(R.id.q403);
+        boolean queFourOptionThree = questionFourOptionThree.isChecked();
+        CheckBox questionFiveOptionTwo = findViewById(R.id.q502);
+        boolean queFiveOptionTwo = questionFiveOptionTwo.isChecked();
+        CheckBox questionFiveOptionOne = findViewById(R.id.q501);
+        boolean queFiveOptionOne = questionFiveOptionOne.isChecked();
+        int totalScore = scoreCounter(queOneOptionTwo, queTwoOptionFour, str, queFourOptionThree, queFiveOptionTwo,queFiveOptionOne);
         printScore(totalScore);
     }
     public int scoreCounter(boolean a,boolean b,String c,boolean d,boolean e,boolean f)
@@ -60,7 +60,7 @@ public class javaQuiz extends AppCompatActivity {
             builder = new AlertDialog.Builder(this);
         }
         builder.setTitle(R.string.totalScore)
-                .setMessage(R.string.yourSocre + totalScore+"/5")
+                .setMessage("Your Score is " + totalScore+"/5")
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                     }

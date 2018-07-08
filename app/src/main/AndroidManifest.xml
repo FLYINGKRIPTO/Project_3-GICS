@@ -17,11 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".topic.ChooseTopic" />
-        <activity android:name=".javaQuiz" />
-        <activity android:name=".layoutQuestions" />
+        <activity android:name=".JavaQuiz" />
+        <activity android:name=".LayoutQuestions" />
         <activity android:name=".XMLquestions" />
-        <activity android:name=".androidGeneral" />
-        <activity android:name=".android_general"></activity>
+        <activity android:name=".Android_general"/>
     </application>
 
 </manifest>

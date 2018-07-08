@@ -11,26 +11,25 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 
 public class XMLquestions extends AppCompatActivity {
-    EditText eText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_xmlquestions);
     }
     public void onSubmitTwo(View view){
-        RadioButton q1_option2 = findViewById(R.id.q1o2);
-        boolean c_q1_option2 = q1_option2.isChecked();
-        RadioButton q2_option2 = findViewById(R.id.q2o2);
-        boolean c_q2_option2 = q2_option2.isChecked();
-        CheckBox q3_option1 = findViewById(R.id.q3o1);
-        boolean c_q3_option1 = q3_option1.isChecked();
-        CheckBox q3_option2 = findViewById(R.id.q3o2);
-        boolean c_q3_option2 = q3_option2.isChecked();
-        RadioButton q4_option2 = findViewById(R.id.q4o2);
-        boolean c_q4_option2 = q4_option2.isChecked();
-        eText = (EditText) findViewById(R.id.q5o4);
+        RadioButton questionOneOptionTwo = findViewById(R.id.q1o2);
+        boolean queOneOptionTwo = questionOneOptionTwo.isChecked();
+        RadioButton questionTwoOptionTwo = findViewById(R.id.q2o2);
+        boolean queTwoOptionTwo = questionTwoOptionTwo.isChecked();
+        CheckBox questionThreeOptionOne = findViewById(R.id.q3o1);
+        boolean queThreeOptionOne = questionThreeOptionOne.isChecked();
+        CheckBox questionThreeOptionTwo = findViewById(R.id.q3o2);
+        boolean queThreeOptionTwo = questionThreeOptionTwo.isChecked();
+        RadioButton questionFourOptionTwo = findViewById(R.id.q4o2);
+        boolean queFourOptionTwo = questionFourOptionTwo.isChecked();
+        EditText eText = (EditText) findViewById(R.id.q5o4);
         String str = eText.getText().toString();
-        int totalScore = scoreCounter(c_q1_option2, c_q2_option2, c_q3_option1, c_q4_option2, str,c_q3_option2);
+        int totalScore = scoreCounter(queOneOptionTwo, queTwoOptionTwo, queThreeOptionOne, queFourOptionTwo, str,queThreeOptionTwo);
         printScore(totalScore);
     }
     public int scoreCounter(boolean a,boolean b,boolean c,boolean d,String e,boolean f)
@@ -48,7 +47,7 @@ public class XMLquestions extends AppCompatActivity {
         if (d){
             baseScore++;
         }
-        if (e.equalsIgnoreCase("gravity")){
+        if (e.equalsIgnoreCase(getString(R.string.gr))){
             baseScore++;
         }
         return baseScore;

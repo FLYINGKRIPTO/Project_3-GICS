@@ -1,5 +1,4 @@
 package com.example.dell.androquiz;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Build;
@@ -9,34 +8,32 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-
-public class layoutQuestions extends AppCompatActivity {
-    EditText eText;
+public class Android_general extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_layout_questions);
+        setContentView(R.layout.activity_android_general);
     }
-    public void onSubmitone(View view) {
-        CheckBox q1_option1 = findViewById(R.id.q1o1);
-        boolean c_q1_option1 = q1_option1.isChecked();
-        CheckBox q1_option3 = findViewById(R.id.q1o3);
-        boolean c_q1_option3 = q1_option3.isChecked();
-        RadioButton q2_option4 = findViewById(R.id.q204);
-        boolean c_q2_option4 = q2_option4.isChecked();
-        RadioButton q3_option1 = findViewById(R.id.q3o1);
-        boolean c_q3_option1 = q3_option1.isChecked();
-        RadioButton q4_option2 = findViewById(R.id.q4o2);
-        boolean c_q4_option2 = q4_option2.isChecked();
-        eText = (EditText) findViewById(R.id.q5o4);
+    public void onSubmitThree(View view){
+        RadioButton questionOneOptionTwo = findViewById(R.id.q1o2);
+        boolean queOneOptionTwo = questionOneOptionTwo.isChecked();
+        RadioButton questionTwoOptionTwo = findViewById(R.id.q2o2);
+        boolean queTwoOptionTwo = questionTwoOptionTwo.isChecked();
+        RadioButton questionThreeOptionThree = findViewById(R.id.q3o3);
+        boolean queThreeOptionOne = questionThreeOptionThree.isChecked();
+        CheckBox questionFourOptionOne = findViewById(R.id.q4o1);
+        boolean queFourOptionOne = questionFourOptionOne.isChecked();
+        CheckBox questionFourOptionTwo = findViewById(R.id.q4o2);
+        boolean queFourOptionTwo = questionFourOptionTwo.isChecked();
+        EditText eText = (EditText) findViewById(R.id.q5o4);
         String str = eText.getText().toString();
-        int totalScore = scoreCounter(c_q1_option1, c_q2_option4, c_q3_option1, c_q4_option2, str,c_q1_option3);
+        int totalScore = scoreCounter(queOneOptionTwo, queTwoOptionTwo, queThreeOptionOne,queFourOptionOne,str,queFourOptionTwo);
         printScore(totalScore);
     }
     public int scoreCounter(boolean a,boolean b,boolean c,boolean d,String e,boolean f)
     {
         int baseScore=0;
-        if(a&&f){
+        if(a){
             baseScore++;
         }
         if (b){
@@ -45,10 +42,10 @@ public class layoutQuestions extends AppCompatActivity {
         if (c){
             baseScore++;
         }
-        if (d){
+        if (d&&f){
             baseScore++;
         }
-        if (e.equalsIgnoreCase("Layout")){
+        if (e.equalsIgnoreCase("View")){
             baseScore++;
         }
         return baseScore;
@@ -56,14 +53,13 @@ public class layoutQuestions extends AppCompatActivity {
         public void printScore(int totalScore)
     {
         AlertDialog.Builder builder;
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             builder = new AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert);
         } else {
             builder = new AlertDialog.Builder(this);
         }
         builder.setTitle(R.string.totalScore)
-                .setMessage(R.string.yourSocre + totalScore+"/5")
+                .setMessage("Your Score is "+ totalScore+"/5")
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
@@ -72,3 +68,9 @@ public class layoutQuestions extends AppCompatActivity {
                 .show();
     }
 }
+
+
+
+
+
+
