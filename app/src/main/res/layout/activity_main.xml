@@ -51,6 +51,4 @@
         android:layout_centerInParent="true"
         android:background="@drawable/android2"
         android:contentDescription="@string/android_image" />
-
-
 </RelativeLayout>

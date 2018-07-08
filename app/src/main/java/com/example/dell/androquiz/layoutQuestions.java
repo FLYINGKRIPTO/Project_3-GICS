@@ -17,53 +17,43 @@ public class layoutQuestions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_questions);
     }
-
     public void onSubmitone(View view) {
         CheckBox q1_option1 = findViewById(R.id.q1o1);
         boolean c_q1_option1 = q1_option1.isChecked();
-
         CheckBox q1_option3 = findViewById(R.id.q1o3);
-        boolean c_q1_option3 = q1_option1.isChecked();
-
+        boolean c_q1_option3 = q1_option3.isChecked();
         RadioButton q2_option4 = findViewById(R.id.q204);
         boolean c_q2_option4 = q2_option4.isChecked();
-
         RadioButton q3_option1 = findViewById(R.id.q3o1);
         boolean c_q3_option1 = q3_option1.isChecked();
-
         RadioButton q4_option2 = findViewById(R.id.q4o2);
         boolean c_q4_option2 = q4_option2.isChecked();
-
         eText = (EditText) findViewById(R.id.q5o4);
         String str = eText.getText().toString();
         int totalScore = scoreCounter(c_q1_option1, c_q2_option4, c_q3_option1, c_q4_option2, str,c_q1_option3);
         printScore(totalScore);
     }
-
     public int scoreCounter(boolean a,boolean b,boolean c,boolean d,String e,boolean f)
     {
         int baseScore=0;
-
         if(a&&f){
-            baseScore+=1;
+            baseScore++;
         }
         if (b){
-            baseScore+=1;
+            baseScore++;
         }
         if (c){
-            baseScore+=1;
+            baseScore++;
         }
         if (d){
-            baseScore+=1;
+            baseScore++;
         }
-        if (e.equals("Layout")||e.equals("layout")){
-            baseScore+=1;
+        if (e.equalsIgnoreCase("Layout")){
+            baseScore++;
         }
         return baseScore;
-
-    }
-
-    public void printScore(int totalScore)
+        }
+        public void printScore(int totalScore)
     {
         AlertDialog.Builder builder;
 
@@ -72,8 +62,8 @@ public class layoutQuestions extends AppCompatActivity {
         } else {
             builder = new AlertDialog.Builder(this);
         }
-        builder.setTitle("    TOTAL SCORE   ")
-                .setMessage("     Your Score is " + totalScore+"/5")
+        builder.setTitle(R.string.totalScore)
+                .setMessage(R.string.yourSocre + totalScore+"/5")
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete

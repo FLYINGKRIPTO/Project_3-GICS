@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,60 +6,47 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundbb"
     tools:context="com.example.dell.androquiz.MainActivityPackage.MainActivity">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        >
-    </android.support.v7.widget.Toolbar>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-
         <Button
             android:id="@+id/start_button"
-            android:layout_width="281dp"
-            android:layout_height="107dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="423dp"
+            android:layout_width="@dimen/StartButtonWidth"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/StartButtonMarginTop"
             android:background="@drawable/group1shadow"
             android:fontFamily="@font/jokerman"
             android:onClick="onStart"
             android:paddingBottom="10dp"
-            android:paddingLeft="55dp"
-            android:paddingRight="55dp"
-            android:paddingTop="2dp"
-            android:text="START"
+            android:paddingStart="@dimen/paddingHorizontal"
+            android:paddingEnd="@dimen/paddingHorizontal"
+            android:paddingTop="@dimen/StartButtonPaddingTop"
+            android:text="@string/start"
             android:textColor="@color/white"
-            android:textSize="35sp"
+            android:textSize="@dimen/TextSizeMedium"
             android:textStyle="normal" />
-
-
         <TextView
             android:id="@+id/andro_quiz"
-            android:layout_width="320dp"
-            android:layout_height="110dp"
+            android:layout_width="@dimen/HeadingButtonWidth"
+            android:layout_height="@dimen/ButtonHeight"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/HeadingMarginTop"
             android:background="@drawable/group2"
             android:fontFamily="@font/jokerman"
-            android:paddingStart="60dp"
-            android:paddingTop="26dp"
+            android:paddingStart="@dimen/HeadingPadding"
+            android:paddingEnd="@dimen/HeadingPaddingTop"
+            android:paddingTop="@dimen/HeadingPaddingTop"
             android:text="@string/andro_quiz"
             android:textColor="@color/white"
-            android:textSize="30sp"
-
+            android:textSize="@dimen/TextSizeMedium"
             />
-
-
     </RelativeLayout>
-
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="@dimen/imageWidth"
         android:layout_height="@dimen/imageHeight"
         android:layout_centerInParent="true"
-        android:background="@drawable/android2" />
+        android:background="@drawable/android2"
+        android:contentDescription="@string/android_image" />
 </RelativeLayout>
